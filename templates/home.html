@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <title> Weather Predictions </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+ <body>
+
+  <div class="pageContainer">
+    <h1 style="text-align: center; margin-bottom: 50px">Weather Prediction</h1>
+    <div style="padding:20px;" class="formContainer">
+    <form action = "/predict" method="post" class="form">
+      <!-- <div>
+        <label for="Summary">Summary : </label>
+        <input type="text" id="Summary" name="Summary">
+      </div> -->
+      <div>
+        <label for="Humidity">Humidity : </label>
+        <input type="text" id="Humidity" name="Humidity">
+      </div>
+      <div >
+        <label for="WindSpeed">Wind Speed (km/h) : </label>
+        <input type="text" id="WindSpeed" name="WindSpeed">
+      </div>
+      <div>
+        <label for="WindBearing">Wind Bearing (degrees) : </label>
+        <input type="text" id="WindBearing" name="WindBearing">
+      </div>
+      <div>
+        <label for="Visibility">Visibility (km) : </label>
+        <input type="text" id="Visibility" name="Visibility">
+      </div>
+      <div>
+        <label for="Pressure">Pressure (millibars) : </label>
+        <input type="text" id="Pressure" name="Pressure">
+      </div>
+      <div>
+      <button type="submit" class="predictButton">Predict</button>
+      </div>
+      
+    </form>
+    </div>
+  </div>
+ </body>
+</html>
